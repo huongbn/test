@@ -71,7 +71,9 @@ Tương tự với Vmnet2 và VMnet3 ta có thể dễ dàng chỉnh sửa theo 
 <a name="4"></a>
 **4. Ba chế độ mạng trong VmWare**
 
-  **4.1 Bridge**
+
+<a name="4.1"></a>
+  * **4.1 Bridge**
  
  Bridge sẽ được tự động chọn khi bạn chọn **Use Bridge Networking** trong **New Virtual Machine Wizard** 
  Khi chọn chế độ này, thì virtual machine tham gia vào Internet bình thường
@@ -79,7 +81,31 @@ Tương tự với Vmnet2 và VMnet3 ta có thể dễ dàng chỉnh sửa theo 
  
  <img src="https://i.imgur.com/HuZcAQ7.png">
  
- Chế độ này nôm na hiểu như là: máy ảo sẽ đi ra Internet bằng 1 đường dây nối từ chính nó tới card vật lý. Khi ta cắm dây mạng vào card vật lý thì máy ảo sẽ truy cập được Internet
+ Chế độ này nôm na hiểu như là: máy ảo sẽ đi ra Internet bằng 1 đường dây nối từ chính nó tới card vật lý. Khi ta cắm dây mạng vào card vật lý thì máy ảo sẽ truy cập được Internet.
+ 
+ 
+ 
+ <a name="4.2"></a>
+  * **4.2 Host-only**
+  
+Oử chế độ này thì **virtual machine** không kết nối ra Internet được. Chúng ta chỉ có thể thực hiện test trong các bài lab cụ thể nào đó.Muốn kết nối đi Internet, có một cách đó là chia sẻ kết nối từ card thật của máy. Vnấ đề này các bạn có thể tìm hiểu thêm các tài liệu trên google.
+  
+  <img src="https://i.imgur.com/hZ6uJcw.png">
+  
+  
+  Chế độ này cung cấp kết nối giữa các máy ảo với nhau hoặc giữa máy ảo và máy thật qua **virtual Ethernet Adapter**
+  Khi ta chọn chế độ *hót-only* thì mặc nhiên trên máy vật lý của chúng ta sẽ có một card **virtual Ethernet Adapter**
+  Để có thể xem **virtual Ethernet Adapter** ta vào `Control Pannel` và tìm mục `Network Connection`.
+  
+  <img src="https://i.imgur.com/M3RS8g9.png">
+  
+  Qua ảnh này ta có thể thấy tất cả các card mạng mà đang có trên máy của chúng ta. có thể thấy trên hình Vmnet2, Vmnet3, Vmnet4 lần lượt là 3 card *virtual* mà chúng ta tạo ra.
+  
+  
+  
+  
+  
+  
  
  
 
