@@ -5,14 +5,14 @@
 * [1. Giới thiệu về VmWare Workstation](#1)
 * [2. Thêm sửa xóa một Vmnet trong VmWare](#2)
 * [3. Sửa dải IP của một Vmnet](#3)
-* [4. 3 chế độ Vmnet trong VmWare Workstation](#4)
+* [4. 3 chế độ trong VmWare Workstation](#4)
   * [4.1 Bridge](4.1)
   * [4.2 Host-only](#4.2)
   * [4.3 NAT](#4.3)
 
 
 <a name="1"></a>
-**I. Giới thiệu về VmWare Workstation**
+**1. Giới thiệu về VmWare Workstation**
 
 
 * VMware là phần mềm tạo máy ảo với hiệu năng hoạt động mạnh mẽ cho phép chạy song song nhiều hệ điều hành cùng lúc, rất hữu ích khi bạn chơi game hoặc thử nghiệm các phần mềm.
@@ -25,3 +25,52 @@
 
 * O đây mình cài đặt bản VmWare Workstaion 12. Ta có giao diện sau khi cài đặt như sau:
 <img src="https://i.imgur.com/S7sJPIc.png">
+
+<a name="2"></a>
+**2. Thêm, sửa, xóa một Vmnet**
+
+* Mặc định khai cài VmWare sẽ cho ta 2 card mạng:
+ * Một card là **bridge**. Card này chính là card mạng thật của máy. Khi sử dụng card này thì máy ảo sẽ kết nối Internet bình thường mà không gặp vấn đề già cả.
+ * Card thứ 2 ở chế độ NAT. Oử chế độ này, máy ảo vẫn kết nối ra được Internet nhưng địa chỉ IP của máy ảo sẽ NAT thành địa chỉ *public* để kết nối đi ra ngoài Internet.
+ 
+    `Thêm một Vmnet`
+    
+Oử màn hình chính của VmWare, ta chọn **Edit** và chọn **Virtual Network Editor**. Một cửa sổ được mở ra và ở đây ta sẽ có các thao tác thêm sửa xóa với một card Vmnet mfa ta mong muốn.
+Ta chọn **Change Setting** để có thể thao tác với card Vmnet mà ta mong muốn như sau:
+
+
+<img src="https://i.imgur.com/zMVJQZf.png">
+
+Tiếp theo ta chọn **Add Network** để thêm card card mà ta mong muốn. Oử đây các bạn có thể thấy tôi thêm 3 card lần lượt là Vmnet1, Vmnet2 và VMnet3 như trong hình vẽ
+
+  `Xóa một Vmnet`
+  
+Khi một card Vmnet không còn dùng nữa, ta có thể chọn card đó và chọn **Remove Network**. Các thao tác rất đơn giản, các bạn thử một lần là quen ngay.
+
+
+<a name="3"></a>
+**3. Sửa IP của một Vmnet**
+
+Như ở trên, ta có thể thấy rằng khi tạo thêm các card Vmnet thì VmWare sẽ tự sinh ra một địa chỉ mạng cho card đó. những địa chỉ này rất khó nhớ và nhiều khi gặp một bài lab nào đó, ta rất khó có thể nhớ đúng các địa chỉ này
+
+Để tuận tiện cho việc thực hiện các bài lab sau này, ta sẽ chỉnh sửa các địa chỉ này sao cho dễ nhớ nhất:
+
+ở đây ta có 3 card có địa chỉ lần lượt là 192.168.80.0; 192.168.166.0 và 192.168.188.0
+
+
+ <img src="https://i.imgur.com/zMVJQZf.png">
+ 
+
+Sau khi chỉnh sửa ta sẽ có thể dễ dàng nhớ địa chỉ mà ta thiết lập cho các Vmnet. Oử đây tôi chỉnh sửa cho card Vmnet 2 với địa chỉ mạng là 10.10.10.0 và subnet là: 255.255.255.0
+
+<img src="https://i.imgur.com/zBRfNrS.png">
+
+Tương tự với Vmnet2 và VMnet3 ta có thể dễ dàng chỉnh sửa theo bất cuwsd dịa chỉ nào mà ta mong muốn.
+
+
+<a name="4"></a>
+**4. 3 chế độ mạng trong VmWare**
+
+  **4.1 Bridge**
+ 
+
