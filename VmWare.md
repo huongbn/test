@@ -5,7 +5,7 @@
 * [1. Giới thiệu về VmWare Workstation](#1)
 * [2. Thêm sửa xóa một Vmnet trong VmWare](#2)
 * [3. Sửa dải IP của một Vmnet](#3)
-* [4. 3 chế độ trong VmWare Workstation](#4)
+* [4. Ba chế độ trong VmWare Workstation](#4)
   * [4.1 Bridge](4.1)
   * [4.2 Host-only](#4.2)
   * [4.3 NAT](#4.3)
@@ -69,8 +69,17 @@ Tương tự với Vmnet2 và VMnet3 ta có thể dễ dàng chỉnh sửa theo 
 
 
 <a name="4"></a>
-**4. 3 chế độ mạng trong VmWare**
+**4. Ba chế độ mạng trong VmWare**
 
   **4.1 Bridge**
+ 
+ Bridge sẽ được tự động chọn khi bạn chọn **Use Bridge Networking** trong **New Virtual Machine Wizard** 
+ Khi chọn chế độ này, thì virtual machine tham gia vào Internet bình thường
+ 
+ 
+ <img src="https://i.imgur.com/HuZcAQ7.png">
+ 
+ Chế độ này nôm na hiểu như là: máy ảo sẽ đi ra Internet bằng 1 đường dây nối từ chính nó tới card vật lý. Khi ta cắm dây mạng vào card vật lý thì máy ảo sẽ truy cập được Internet
+ 
  
 
