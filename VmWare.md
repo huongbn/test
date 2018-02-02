@@ -102,6 +102,23 @@ Oử chế độ này thì **virtual machine** không kết nối ra Internet đ
   Qua ảnh này ta có thể thấy tất cả các card mạng mà đang có trên máy của chúng ta. có thể thấy trên hình Vmnet2, Vmnet3, Vmnet4 lần lượt là 3 card *virtual* mà chúng ta tạo ra.
   
   
+  <a name="4.3"></a>
+  * **4.3 NAT**
+  
+  
+ <img src="https://i.imgur.com/VFYl0Fl.png">
+ 
+  NAT viết tắt của Network Address Translation. Oử chế độ này thì địa chỉ IP của nó không phải là địa chỉ public thông thường mà là các địa chỉ private. Thiết bị VmWare NAT sẽ chuyển đổi địa chỉ private của máy ảo thành địa chỉ public để máy ảo có thể đi ra ngoài Internet.
+  
+ NAT device sẽ thực hiện chuyển đổi từ IP private thành IP public của một hoặc nhiều máy ảo để có thể đi ra ngoài Internet.
+ NAT device sẽ nhận từng gói tin tương ứng của từng máy ảo và thực hiện chuyển tới địa chỉ đích một cách chính xác nhất.
+ 
+ 
+ **The end**
+ Bài tìm hiểu của mình hết tại đây :))
+  
+  
+  
   
   
   
