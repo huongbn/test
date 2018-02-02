@@ -15,4 +15,4 @@
 * Cac ban co the Download **link** cai dặt tai trang sau: https://my.vmware.com/web/vmware/info/slug/desktop_end_user_computing/vmware_workstation_pro/12_0
 
 * O day miìn cai banr Vmưare ưworkstaion 12 de dồng bo moi thu. Ta co giao diện sau khi cai dat nhu sau:
-<img src ="[Imgur](https://i.imgur.com/S7sJPIc.png)">
+<img src="[Imgur](https://i.imgur.com/S7sJPIc.png)">
